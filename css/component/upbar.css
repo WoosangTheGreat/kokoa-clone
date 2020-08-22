@@ -1,0 +1,36 @@
+.up-bar {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.up-bar__section {
+  width: 33%;
+}
+up-bar__section:first-child {
+  display: flex;
+  align-items: center;
+}
+.up-bar__section:first-child span {
+  margin-right: 5px;
+  position: relative;
+  top: 1.3px;
+}
+.up-bar__section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.up-bar__section:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.up-bar__section:last-child span {
+  margin: 0px 5px;
+}
+.fa-battery-full {
+  position: relative;
+  top: 1px;
+}
