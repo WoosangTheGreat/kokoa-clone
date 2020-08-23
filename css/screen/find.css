@@ -1,0 +1,38 @@
+.my-profile {
+  display: flex;
+  padding: 30px;
+}
+.my-profile__img {
+  width: 150px;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.my-profile__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+.my-profile__profile span:first-child {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.my-profile__profile span:nth-child(2) {
+  opacity: 0.5;
+}
+.menus {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+.menus i {
+  margin-right: 30px;
+}
+
+.menus span {
+  font-size: 30px;
+  opacity: 0.5;
+}

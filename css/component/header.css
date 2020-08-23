@@ -1,0 +1,14 @@
+.screen-header {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-shadow: 0px 2px 3px 0px black;
+}
+
+.screen-header__btn > * {
+  margin: 0px 10px;
+  font-size: 30px;
+}

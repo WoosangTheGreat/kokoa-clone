@@ -1,0 +1,21 @@
+.search-naver-daum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  box-shadow: 0px 2px 3px 0px black;
+}
+.naver,
+.daum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin-top: 80px;
+}

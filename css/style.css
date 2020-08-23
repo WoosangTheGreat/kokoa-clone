@@ -3,6 +3,7 @@
 
 @import "component/upbar.css";
 @import "component/nav.css";
+@import "component/header.css";
 
 @import "screen/welcome.css";
 @import "screen/friends.css";
