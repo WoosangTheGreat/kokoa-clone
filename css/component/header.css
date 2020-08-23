@@ -12,3 +12,45 @@
   margin: 0px 10px;
   font-size: 30px;
 }
+
+.alt-header {
+  margin-top: 50px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alt-header__box {
+  width: 33%;
+}
+.alt-header__box a {
+  display: flex;
+  justify-content: flex-start;
+}
+.alt-header__box:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.alt-header__box:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.settings-menus {
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+.fa-volume-mute {
+  margin-right: 50px;
+}
+.settings-menus div:nth-child(2) {
+  font-size: 20px;
+  opacity: 0.6;
+}

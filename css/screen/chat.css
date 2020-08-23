@@ -1,0 +1,134 @@
+@keyframes fadein {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.chat-screen {
+  background-color: grey;
+  height: 1000vh;
+}
+.alt-header {
+  padding: 40px 20px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+  background-color: grey;
+  top: -25px;
+}
+.chat-box {
+  padding: 160px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat-box__time {
+  width: 50%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--yellow);
+}
+.chatup {
+  background-color: grey;
+  z-index: 11;
+}
+.messege {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  animation: fadein 1s linear;
+}
+.messege img {
+  width: 70px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.messege__content__name {
+  opacity: 0.5;
+}
+.messege__content__me span:first-child {
+  padding: 9px;
+  background-color: white;
+  border-radius: 5px;
+}
+.messege__content__me {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.mine {
+  justify-content: flex-end;
+}
+.messege__content__me_2 span:nth-child(2) {
+  padding: 9px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+}
+
+.reply {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: honeydew;
+  padding: 20px 20px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.reply__column:first-child {
+  width: 12%;
+}
+.reply__column:nth-child(2) {
+  width: 88%;
+  position: relative;
+}
+.reply__column:nth-child(2) input {
+  height: 30px;
+  width: 95%;
+  padding-left: 20px;
+  border-radius: 30px;
+}
+.reply__column:nth-child(2) > i,
+.reply__column:nth-child(2) button {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+.reply__column:nth-child(2) > i {
+  right: 40px;
+  top: 10px;
+}
+
+.reply__column:nth-child(2) button {
+  top: 3px;
+  right: 0px;
+}
+button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+button:focus {
+  outline: none;
+}
+
+.reply input:focus-within {
+  width: 90vw;
+  transform: translateX(-60px);
+  z-index: 10;
+}
+.reply input {
+  transition: all 0.5s ease-in-out;
+}

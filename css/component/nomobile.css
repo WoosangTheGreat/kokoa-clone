@@ -1,0 +1,26 @@
+#nomobile {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+  top: 0px;
+  animation: nomobilek 0.2s linear infinite;
+}
+@keyframes nomobilek {
+  from {
+    background-color: lawngreen;
+  }
+  to {
+    background-color: var(--yellow);
+  }
+}
+@media screen and (max-width: 600px) {
+  #nomobile {
+    display: none;
+  }
+}
